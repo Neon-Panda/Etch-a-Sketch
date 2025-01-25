@@ -2,26 +2,24 @@
 let numberOfSquares = 16
 
 function createSquares() {
-    for (let i = numberOfSquares; i > 0; i--) {
-        for (let j = numberOfSquares; j > 0; j--) {
-
+    for (let i = numberOfSquares ** 2; i > 0; i--) {
         container = document.querySelector(".container");
         const rowDiv = document.createElement("div");
         rowDiv.classList.add("square");
         rowDiv.style.height = `${800 / numberOfSquares}px`;
         rowDiv.style.width = `${800 / numberOfSquares}px`;
-        container.appendChild(rowDiv)}}
+        container.appendChild(rowDiv)}
 
         const squareDiv = document.querySelectorAll(".square");
         squareDiv.forEach( (square) => {
-            let opacity = 0.1;
+            let opacity = 0.2;
             square.addEventListener("mouseenter", () => {
                 if (square.style.backgroundColor == "") {
                     square.style.backgroundColor = randomColor();
                 }
                 if (parseInt(square.style.opacity) < 1)
                     opacity += 0.2;
-                    square.style.opacity = opacity.toString();
+                    square.style.opacity = opacity;
     })
 })}
 createSquares()
