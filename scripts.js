@@ -45,7 +45,7 @@ const button = document.querySelector("button");
 
 button.addEventListener("click", () => {
     numberSubmission = prompt("How many rows & columns should the new grid have? Must be less than 100")
-    if (numberSubmission < 100 || numberOfSquares > 0) {
+    if (numberSubmission < 100 || numberSubmission > 0) {
     numberOfSquares = numberSubmission
 }
 deleteSquares()
