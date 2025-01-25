@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 800px;
+    height: 840px;
+    flex-wrap: wrap;
+}
+
+.square {
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
